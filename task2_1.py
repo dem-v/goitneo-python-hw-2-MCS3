@@ -59,7 +59,7 @@ def write_contact_change(contacts, args, *_):
     return write_contact(contacts, args, True)
     
     
-    
+@input_error    
 def get_phone(contacts, args, *_):
     name = args[0]
     if name not in contacts.keys():
